@@ -1,4 +1,4 @@
-﻿___INFO___
+___INFO___
 
 {
   "displayName": "Persado Click Tracker",
@@ -152,15 +152,16 @@ ___WEB_PERMISSIONS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
+const log = require('logToConsole');
 const callInWindow = require('callInWindow');
 const copyFromWindow = require('copyFromWindow');
-const log = require('logToConsole');
+const encodeUriComponent = require('encodeUriComponent');
 var sp = copyFromWindow('persado_sp');
-log(3, sp);
 callInWindow('PRSD.track', sp, 'click');
 data.gtmOnSuccess();
+log(3, sp);
 
 
 ___NOTES___
 
-Created on 14/08/2019, 18:46:29
+Created on 26/08/2019, 14:38:00
