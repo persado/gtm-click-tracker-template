@@ -2,7 +2,7 @@ ___INFO___
 
 {
   "displayName": "Persado Click Tracker",
-  "description": "Persado Click Tracker",
+  "description": "Place the Persado Click Tracker on the destination page to measure clicks. Always load the tracker after the Persado Generic Tracker",
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "TAG",
@@ -125,27 +125,6 @@ ___WEB_PERMISSIONS___
       "isEditedByUser": true
     },
     "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "all"
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
   }
 ]
 
@@ -162,6 +141,7 @@ data.gtmOnSuccess();
 log(3, sp);
 
 
+
 ___NOTES___
 
-Created on 26/08/2019, 14:38:00
+Created on 19/09/2019, 12:33:00
