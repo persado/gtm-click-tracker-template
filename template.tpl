@@ -134,7 +134,6 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 const log = require('logToConsole');
 const callInWindow = require('callInWindow');
 const copyFromWindow = require('copyFromWindow');
-const encodeUriComponent = require('encodeUriComponent');
 var sp = copyFromWindow('persado_sp');
 callInWindow('PRSD.track', sp, 'click');
 data.gtmOnSuccess();
@@ -144,4 +143,4 @@ log(3, sp);
 
 ___NOTES___
 
-Created on 19/09/2019, 12:33:00
+Created on 19/09/2019, 12:37:09
