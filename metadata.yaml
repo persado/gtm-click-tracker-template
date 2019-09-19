@@ -1,5 +1,5 @@
 homepage: "www.persado.com"
 documentation: "https://www.persado.com"
 versions:
-  - sha: 95d37d1
+  - sha: 66d09a0
     changeNotes: Initial Version
