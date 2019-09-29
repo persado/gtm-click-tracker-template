@@ -1,8 +1,20 @@
+___TERMS_OF_SERVICE___
+
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+
+Template Gallery Developer Terms of Service available at
+
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+
+Google may provide), as modified from time to time.
+
 ___INFO___
 
 {
   "displayName": "Persado Click Tracker",
   "description": "Place the Persado Click Tracker on the destination page to measure clicks. Always load the tracker after the Persado Generic Tracker",
+  "categories": ["MARKETING","ADVERTISING","EXPERIMENTATION"],
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "TAG",
@@ -131,13 +143,11 @@ ___WEB_PERMISSIONS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-const log = require('logToConsole');
 const callInWindow = require('callInWindow');
 const copyFromWindow = require('copyFromWindow');
 var sp = copyFromWindow('persado_sp');
 callInWindow('PRSD.track', sp, 'click');
 data.gtmOnSuccess();
-log(3, sp);
 
 
 
